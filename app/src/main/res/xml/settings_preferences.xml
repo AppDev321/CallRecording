@@ -1,0 +1,130 @@
+<PreferenceScreen
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Device">
+
+        <PreferenceScreen
+            app:iconSpaceReserved="false"
+            app:title="Device Name"
+            app:key="@string/device_name"
+            app:summary="">
+
+        </PreferenceScreen>
+        <PreferenceScreen
+            app:isPreferenceVisible="false"
+            app:iconSpaceReserved="false"
+            app:title="Company Name"
+            app:key="@string/company_name"
+            app:summary="">
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Recording">
+    <SwitchPreference
+        app:iconSpaceReserved="false"
+        app:key="@string/record_service"
+        app:title="Enable Recording"
+        app:summary="Call recording is enabled"
+        app:defaultValue="true"/>
+        <PreferenceScreen
+            app:iconSpaceReserved="false"
+            app:title="File Storage"
+            app:summary="Owner Google Drive"/>
+        <PreferenceScreen
+            app:iconSpaceReserved="false"
+            app:title="Call Data"
+            app:summary="Owner Excel Sheet"/>
+
+        <PreferenceScreen
+            app:iconSpaceReserved="false"
+            app:title="File Type"
+            app:summary="MP3"/>
+
+       <!-- <ListPreference
+            app:iconSpaceReserved="false"
+            app:entries="@array/preferred_audio_source_entries"
+            app:entryValues="@array/preferred_audio_source_entry_values"
+            app:defaultValue="4"
+            app:key="@string/audio_source"
+            app:title="Audio Source"
+            app:useSimpleSummaryProvider="true" />-->
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:isPreferenceVisible="false"
+        app:iconSpaceReserved="false"
+        app:title="Record Announcement">
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            app:key="@string/announcement_status"
+            app:title="Enable"
+            app:summary="Enable Recording Announcement"
+            app:defaultValue="true">
+
+        </SwitchPreference>
+        <PreferenceScreen
+            app:iconSpaceReserved="false"
+            app:title="Pre-Recording File"
+            app:summary="Download/CloseCall/announcement.mp3">
+
+        </PreferenceScreen>
+        <ListPreference
+            app:iconSpaceReserved="false"
+            app:entries="@array/prerecord_incoming_delay"
+            app:entryValues="@array/prerecord_incoming_delay_entry_values"
+            app:defaultValue="0"
+            app:key="@string/incoming_delay"
+            app:title="Announcement Delay Incoming Calls"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:iconSpaceReserved="false"
+            app:entries="@array/prerecord_outgoing_delay"
+            app:entryValues="@array/prerecord_outgoing_delay_entry_values"
+            app:defaultValue="0"
+            app:key="@string/outgoing_delay"
+            app:title="Announcement Delay Outgoing Calls"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Call Logs">
+
+        <PreferenceScreen
+            app:iconSpaceReserved="false"
+            app:title="Clear Logs"
+            app:key="@string/clear_call_log"
+            app:summary="This will clear all your call logs that are locally stored in device">
+
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="About">
+
+        <PreferenceScreen
+            app:iconSpaceReserved="false"
+
+            app:summary="This app is used to record calls in background and save data in Google Drive of Owner account and also linked detail of calls and recording in Google Excel sheet with the owner account">
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            app:iconSpaceReserved="false"
+            app:title="Version"
+            app:summary="1.0"/>
+    </PreferenceCategory>
+</PreferenceScreen>

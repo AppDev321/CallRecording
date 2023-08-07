@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="record_service">record_service</string>
+    <string name="device_name">device_name</string>
+    <string name="company_name">company_name</string>
+    <string name="clear_call_log">clear_call_log</string>
+    <string name="audio_source">audio_source</string>
+    <string name="incoming_delay">incoming_delay</string>
+    <string name="outgoing_delay">outgoing_delay</string>
+    <string name="announcement_status">announcement_status</string>
+</resources>

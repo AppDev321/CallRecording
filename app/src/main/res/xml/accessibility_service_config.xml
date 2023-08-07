@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:description="@string/app_name"
+    android:packageNames=""
+android:accessibilityEventTypes="typeAllMask"
+android:accessibilityFlags="flagDefault"
+android:accessibilityFeedbackType="feedbackGeneric"
+android:notificationTimeout="100"
+android:canRetrieveWindowContent="true"
+android:canRequestFilterKeyEvents="true"
+android:settingsActivity="" />
+
+   <!-- android:packageNames="com.android.phone"-->
+   <!-- android:accessibilityEventTypes="typeWindowContentChanged"-->
+    <!-- android:accessibilityEventTypes=""
+     android:accessibilityFlags=""
+     android:canRetrieveWindowContent="false"
+     android:description="@string/app_name"
+     android:packageNames="com.android.phone"
+
+    android:notificationTimeout="0" />
+
+     -->
